@@ -25,8 +25,8 @@ La base de datos contiene las siguientes variables:"
 - IA (Inseguridad alimentaria en el hogar): 0 "No presenta IA", 1 "Presenta IA"
 
 # C O N C L U S I ó N
-## las familias que no tienen un ingreso adicional al alboral tienen mas probalibilidades
-## de presentar inseguridad alimentaria (70%), entre las familias que Sí reciben un
-## ingreso adicional al laboral aunque son una cantidad menor en porcentaje las probabilidades de
-## caer en inseguridad alimentaria es mayor (78%) lo cual puede indicar que las ayudas a estas familias
-## no son suficientes. 
+ las familias que no tienen un ingreso adicional al lAboral tienen mas probalibilidades
+ de presentar inseguridad alimentaria (70%). 
+ Pero entre las familias que Sí reciben un  ingreso adicional al laboral, aunque son una cantidad menor,
+ en porcentaje las probabilidades de caer en inseguridad alimentaria son mayores (78%) 
+ lo cual puede indicar que las ayudas a estas familias no son suficientes. 
