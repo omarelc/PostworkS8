@@ -196,3 +196,27 @@ addmargins(tabla_abs2, c(1, 2))
 # ingreso adicional al laboral aunque son una cantidad menor en porcentaje las probabilidades de
 # caer en inseguridad alimentaria es mayor (78%) lo cual puede indicar que las ayudas a estas familias
 # no son suficientes. 
+
+
+
+dfc.summ <- dfc %>%
+  select(nse5f, ln_als, ln_alns, IA) %>%
+  mutate(sumaing = ln_als + ln_alns) %>%
+  group_by(nse5f) %>%
+  summarize(total_as = sum(ln_als),
+            total_ans = sum(ln_alns),
+            pctg_ans = (total_ans / ( total_as + total_ans )))
+head(dfc.summ)
+
+"nse5f      total_as total_ans pctg_ans
+  <fct>         <dbl>     <dbl>    <dbl>
+1 Bajo         20613.    13105.    0.389
+2 Medio bajo   23689.    15354.    0.393
+3 Medio        25447.    16697.    0.396
+4 Medio alto   27610.    18469.    0.401
+5 Alto         28214.    19905.    0.414"
+
+# También se observa que al sumar el gasto en alimentos saludables y no saludables, y considerarlo como un total de gasto, 
+# al calcular el porcentaje que las familias dedican a alimentos no saludables (Gasto alim. no saludables/Gastototal). 
+# se obtien porcentajes de gasto en alimentos no saludables de 39% el nivel bajo y 41% el alto (con los intermedios en ese rango)
+# En esa zona del país la gente dedica más de un tercio de sus gastos en alimentos a comprar alimentos no saludables, lo cual no es recomendable
