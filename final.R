@@ -20,7 +20,7 @@ La base de datos contiene las siguientes variables:"
 #ln_als (Logarítmo natural del gasto en alimentos saludables)
 #ln_alns (Logarítmo natural del gasto en alimentos no saludables)
 #IA (Inseguridad alimentaria en el hogar): 0 "No presenta IA", 1 "Presenta IA"
-install.packages('zoo')
+
 library(dplyr)
 library(DescTools)
 library(ggplot2)
