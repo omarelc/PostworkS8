@@ -272,6 +272,33 @@ curve(predict(logistic.1, newdata = data.frame(x), type = "response"),add = TRUE
 
 
 
+" Comprobar : La mayoría de las personas afirman que los hogares
+con menor nivel socioeconómico tienden a gastar más en productos no saludables que las personas
+con mayores niveles socioeconómicos y que esto, entre otros determinantes, lleva a que un hogar
+presente cierta inseguridad alimentaria"
+
+dfc.summ <- df %>%
+  select(nse5f, ln_als, ln_alns, IA) %>%
+  mutate(sumaing = ln_als + ln_alns) %>%
+  group_by(nse5f) %>%
+  summarize(total_as = sum(ln_als),
+            total_ans = sum(ln_alns),
+            pctg_ans = (total_ans / ( total_as + total_ans )))
+head(dfc.summ)
+"nse5f      total_as total_ans pctg_ans
+  <fct>         <dbl>     <dbl>    <dbl>
+1 Bajo         50478.    34804.    0.408
+2 Medio Bajo   50752.    34345.    0.404
+3 Medio        50617.    34036.    0.402
+4 Medio Alto   49330.    33169.    0.402
+5 Alto         46391.    31981.    0.408"
+
+# En esa zona del país la gente dedica dos quintas partes de su gasto en alimentos a comprar alimentos no saludables (pctg_ans).
+# Y en proporción sobre el gasto toal (total_as + total_ans), se puede ver que no hay diferencia entre lo que se destina a la compra
+# de Alimentos No Saludables
+
+
+
 "NOTA: Todo tu planteamiento deberá estár correctamente desarrollado y deberás analizar e interpretar todos tus resultados
 para poder dar una conclusión final al problema planteado."
 
