@@ -2,10 +2,10 @@
 De acuerdo con los datos obtenidos en el análisis de la información se obtienen las siguientes deducciones:
 
 La muestra nos indica que la mayor parte de las personas:
- - Viven en zona urbana
- - No cuentan con un recurso financiero extra al hogar
- - El jefe de la casa suele se el hombre
- - Los hogares presentan Inseguridad Alimentaria
+ - Viven en zona urbana  65.15%
+ - No cuentan con un recurso financiero extra al hogar   80.97%
+ - El jefe de la casa suele se el hombre 75.16%
+ - Los hogares presentan Inseguridad Alimentaria  73.58%
 
 Respecto al logaritmo natural en el gasto de alimentos saludables se obtiene que:
  - El promedio de la muestra es de 6.066521
