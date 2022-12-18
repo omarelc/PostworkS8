@@ -1,32 +1,71 @@
-# PostworkS8
-repositorio para subir los documentos del postwork 8
-## DESARROLLO
-Un centro de salud nutricional está interesado en analizar estadísticamente y probabilísticamente los patrones 
-de gasto en alimentos saludables y no saludables en los hogares mexicanos con base en su nivel socioeconómico,
-en si el hogar tiene recursos financieros extras al ingreso y en si presenta o no inseguridad alimentaria. Además,
-está interesado en un modelo que le permita identificar los determinantes socioeconómicos de la inseguridad alimentaria.
+# BEDU_Postwork08
+De acuerdo con los datos obtenidos en el análisis de la información se obtienen las siguientes deducciones:
 
-La base de datos es un extracto de la Encuesta Nacional de Salud y Nutrición (2012) levantada por el Instituto Nacional 
-de Salud Pública en México. La mayoría de las personas afirman que los hogares con menor nivel socioeconómico tienden a
-gastar más en productos no saludables que las personas con mayores niveles socioeconómicos y que esto, entre otros
-determinantes, lleva a que un hogar presente cierta inseguridad alimentaria.
+La muestra nos indica que la mayor parte de las personas:
+ - Viven en zona urbana
+ - No cuentan con un recurso financiero extra al hogar
+ - El jefe de la casa suele se el hombre
+ - Los hogares presentan Inseguridad Alimentaria
 
-La base de datos contiene las siguientes variables:"
-  
-- nse5f (Nivel socieconómico del hogar): 1 "Bajo", 2 "Medio bajo", 3 "Medio", 4 "Medio alto", 5 "Alto"
-- area (Zona geográfica): 0 "Zona urbana", 1 "Zona rural"
-- numpeho (Número de persona en el hogar)
-- refin (Recursos financieros distintos al ingreso laboral): 0 "no", 1 "sí"
-- edadjef (Edad del jefe/a de familia)
-- sexoje (Sexo del jefe/a de familia): 0 "Hombre", 1 "Mujer"
-- añosedu (Años de educación del jefe de familia)
-- ln_als (Logarítmo natural del gasto en alimentos saludables)
-- ln_alns (Logarítmo natural del gasto en alimentos no saludables)
-- IA (Inseguridad alimentaria en el hogar): 0 "No presenta IA", 1 "Presenta IA"
+Respecto al logaritmo natural en el gasto de alimentos saludables se obtiene que:
+ - El promedio de la muestra es de 6.066521
+ - La desviación estándar de la muestra es de 0.7387856
+ - La moda de la muestra es de 6.066521
+ - El nivel socioeconómico Bajo gasta en promedio 5.7
+ - El nivel socioeconómico Medio Bajo gasta en promedio 5.93
+ - El nivel socioeconómico Medio gasta en promedio 6.08
+ - El nivel socioeconómico Medio Alto gasta en promedio 6.24
+ - El nivel socioeconómico Alto gasta en promedio 6.47
+ - La desviación estándar del nivel socioeconómico Bajo es de 0.791
+ - La desviación estándar del nivel socioeconómico Medio Bajo es de 0.706
+ - La desviación estándar del nivel socioeconómico Medio es de 0.659
+ - La desviación estándar del nivel socioeconómico Medio Alto es de 0.644
+ - La desviación estándar del nivel socioeconómico Alto es de 0.627
 
-# C O N C L U S I ó N
- las familias que no tienen un ingreso adicional al lAboral tienen mas probalibilidades
- de presentar inseguridad alimentaria (70%). 
- Pero entre las familias que Sí reciben un  ingreso adicional al laboral, aunque son una cantidad menor,
- en porcentaje las probabilidades de caer en inseguridad alimentaria son mayores (78%) 
- lo cual puede indicar que las ayudas a estas familias no son suficientes. 
+El logaritmo natural en el gasto de alimentos NO saludables se obtiene que:
+ - El promedio de la muestra es de 4.124941
+ - La desviación estándar de la muestra es de 0.7896813
+ - La moda de la muestra es de 4.124941
+ - El nivel socioeconómico Bajo gasta en promedio 3.93
+ - El nivel socioeconómico Medio Bajo gasta en promedio 4.01
+ - El nivel socioeconómico Medio gasta en promedio 4.09
+ - El nivel socioeconómico Medio Alto gasta en promedio 4.20
+ - El nivel socioeconómico Alto gasta en promedio 4.46
+ - La desviación estándar del nivel socioeconómico Bajo es de 0.668
+ - La desviación estándar del nivel socioeconómico Medio Bajo es de 0.698
+ - La desviación estándar del nivel socioeconómico Medio es de 0.743
+ - La desviación estándar del nivel socioeconómico Medio Alto es de 0.817
+ - La desviación estándar del nivel socioeconómico Alto es de 0.925
+
+Al observar la gráfica de la correlación del nivel socioeconómico con la compra de alimentos saludables y no saludables se deduce que a mayor nivel es más probable que se se compren ambos alimentos con un ligero aumento de los productos saludables por parte de los niveles socioeconómicos altos y una mayor tendencia a comprar alimentos no saludables por parte de los niveles socioeconómicos mas bajos.
+
+Respecto a la probabilidad de que en los hogares existan recursos financieros extras lo más probable es que no lo tengan siendo el nivel Alto el de mayor probabilidad de no contar con recursos extra con un 84.81% mientras que la probabilidad del nivel bajo es de 79.64%;
+
+**** DUDA
+por otro lado, si el hogar cuenta con recursos financieros extra lo más probable es que provengan de un hogar de nivel Medio Alto con un 4.03% y el nivel Alto el de menor probabilidad con un 3.32% de que cuente con un recurso extra.
+DUDA ****
+
+La Inseguridad Alimentaria es más probable que no se presente en el nivel Bajo con un 13% lo que representa que si se pertenece a este sector es un 87% seguro que se tendrá inseguridad alimentaria.
+
+**** DUDa
+De acuerdo con los datos existe evidencia estadística de que el logaritmo natural del gasto en alimentos saludables es mayor a 6.1834; por otro lado, el logaritmo natural en gastos de alimentos no saludables existe evidencia estadística para concluir que es menor a 4.1298.
+DUDA ****
+
+De acuerdo con la regresión lineal se concluye que a mayor número de años de estudio disminuya la probabilidad de tener Inseguridad Alimentaria y que a mayor número de personas que vivan en el hogar aumenta la probabilidad de tener Inseguridad Alimentaria
+
+
+**** Pripuesta agregar
+Para responder algo sobre esto: Comprobar : La mayoría de las personas afirman que los hogares
+con menor nivel socioeconómico tienden a gastar más en productos no saludables que las personas
+con mayores niveles socioeconómicos y que esto, entre otros determinantes, lleva a que un hogar
+presente cierta inseguridad alimentaria
+
+ En esa zona del país la gente dedica dos quintas partes de sus ingresos a comprar alimentos no saludables.
+ Y en proporción sobre el gasto total, se puede ver que no hay diferencia sustancial entre losniveles socioeconómicos
+ a lo que se destina a la compra de Alimentos No Saludables
+Propuesta agregar *****
+
+
+
+
+
