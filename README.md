@@ -47,18 +47,18 @@ DUDA ****
 
 La Inseguridad Alimentaria es más probable que no se presente en el nivel Bajo con un 13% lo que representa que si se pertenece a este sector es un 87% seguro que se tendrá inseguridad alimentaria.
 
-**** DUDa
+**** DUDA
 De acuerdo con los datos existe evidencia estadística de que el logaritmo natural del gasto en alimentos saludables es mayor a 6.1834; por otro lado, el logaritmo natural en gastos de alimentos no saludables existe evidencia estadística para concluir que es menor a 4.1298.
 DUDA ****
 
 De acuerdo con la regresión lineal se concluye que a mayor número de años de estudio disminuya la probabilidad de tener Inseguridad Alimentaria y que a mayor número de personas que vivan en el hogar aumenta la probabilidad de tener Inseguridad Alimentaria
 
 
-**** Pripuesta agregar
-Para responder algo sobre esto: Comprobar : La mayoría de las personas afirman que los hogares
+**** Propuesta agregar
+Para responder algo sobre esto: <<La mayoría de las personas afirman que los hogares
 con menor nivel socioeconómico tienden a gastar más en productos no saludables que las personas
 con mayores niveles socioeconómicos y que esto, entre otros determinantes, lleva a que un hogar
-presente cierta inseguridad alimentaria
+presente cierta inseguridad alimentaria>>
 
  En esa zona del país la gente dedica dos quintas partes de sus ingresos a comprar alimentos no saludables.
  Y en proporción sobre el gasto total, se puede ver que no hay diferencia sustancial entre losniveles socioeconómicos
